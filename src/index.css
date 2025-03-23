@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  @apply bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+
+/* Custom animations */
+.hover-scale {
+  @apply transition-transform duration-300;
+}
+.hover-scale:hover {
+  @apply transform scale-105;
+}
+
+/* Dark mode toggle styles */
+.dark-mode-toggle {
+  @apply relative inline-flex items-center cursor-pointer;
+}
+
+.dark-mode-toggle .toggle-track {
+  @apply w-11 h-6 bg-gray-300 rounded-full;
+}
+
+.dark-mode-toggle.dark .toggle-track {
+  @apply bg-blue-600;
+}
+
+.dark-mode-toggle .toggle-thumb {
+  @apply absolute top-0.5 left-0.5 bg-white w-5 h-5 rounded-full transition-transform duration-300;
+}
+
+.dark-mode-toggle.dark .toggle-thumb {
+  @apply transform translate-x-5;
+}
+
+/* Article content styles */
+.article-content h2 {
+  @apply text-2xl mt-6 mb-4;
+}
+
+.article-content p {
+  @apply mb-4;
+}
+
+.article-content a {
+  @apply text-blue-600 hover:underline;
+}
+
+.article-content ul,
+.article-content ol {
+  @apply pl-6 mb-4;
+}
+
+.article-content ul {
+  @apply list-disc;
+}
+
+.article-content ol {
+  @apply list-decimal;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500 dark:bg-gray-500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    @apply px-4;
+  }
+}
+
+/* Loading animation */
+.loading-spinner {
+  @apply w-10 h-10 border-4 border-blue-200 rounded-full animate-spin;
+}
+
+.loading-spinner:after {
+  @apply absolute w-10 h-10 border-4 border-blue-600 rounded-full border-t-transparent;
+  content: "";
+  top: -4px;
+  left: -4px;
+}

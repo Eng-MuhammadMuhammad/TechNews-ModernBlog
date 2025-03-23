@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "AI & Machine Learning"
+  },
+  {
+    "id": 2,
+    "name": "Software Development"
+  },
+  {
+    "id": 3,
+    "name": "Hardware"
+  },
+  {
+    "id": 4,
+    "name": "Cybersecurity"
+  },
+  {
+    "id": 5,
+    "name": "Cloud Computing"
+  },
+  {
+    "id": 6,
+    "name": "Blockchain"
+  }
+]
